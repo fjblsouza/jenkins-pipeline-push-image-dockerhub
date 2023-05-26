@@ -29,7 +29,7 @@ This section will guide you to build a pipeline in Jenkins and push docker image
 	    stage('gitclone') {
 
 			steps {
-				git 'https://github.com/shazforiot/nodeapp_test.git'
+				git 'https://github.com/fjblsouza/jenkins-pipeline-push-image-dockerhub.git'
 			}
 		}
 
