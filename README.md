@@ -36,7 +36,7 @@ This section will guide you to build a pipeline in Jenkins and push docker image
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t fjblsouza/nodeapp_test:latest .'
+				sh 'docker build -t franciscojblsouza/nodeapp_test:latest .'
 			}
 		}
 
@@ -50,7 +50,7 @@ This section will guide you to build a pipeline in Jenkins and push docker image
 		stage('Push') {
 
 			steps {
-				sh 'docker push fjblsouza/nodeapp_test:latest'
+				sh 'docker push franciscojblsouza/nodeapp_test:latest'
 			}
 		}
 	}
@@ -63,11 +63,12 @@ This section will guide you to build a pipeline in Jenkins and push docker image
 
 }
    ```
-   ```
+ ```
 - Click Save.
 - Click Build Now in the project window to make sure that the build works. 
 
 - Jenkins will now build your project.
+
 - Click on the Build History to view the build results.
 - Click on the Logs to view the build logs in each stage.
 ```
