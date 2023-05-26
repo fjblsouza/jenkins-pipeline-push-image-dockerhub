@@ -18,7 +18,7 @@ This section will guide you to build a pipeline in Jenkins and push docker image
    ```
   pipeline{
 
-	agent {label 'linux'}
+	agent {label 'dev-server'}
 
 	environment {
 		DOCKERHUB_CREDENTIALS=credentials('dockerhub')
