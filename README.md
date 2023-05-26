@@ -21,7 +21,7 @@ This section will guide you to build a pipeline in Jenkins and push docker image
 	agent {label 'dev-server'}
 
 	environment {
-		DOCKERHUB_CREDENTIALS=credentials('dockerhub')
+		DOCKERHUB_CREDENTIALS=credentials('dockerHub')
 	}
 
 	stages {
@@ -29,7 +29,7 @@ This section will guide you to build a pipeline in Jenkins and push docker image
 	    stage('gitclone') {
 
 			steps {
-				git 'https://github.com/fjblsouza/jenkins-pipeline-push-image-dockerhub.git'
+				git 'https://github.com/fjblsouza/nodeapp_test.git'
 			}
 		}
 
